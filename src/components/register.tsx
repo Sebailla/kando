@@ -28,7 +28,7 @@ export function Register() {
         password: formData.get("password"),
         redirect: false,
       });
-      if (res?.ok) return router.push("/blog");
+      if (res?.ok) return router.push("/");
       console.log(signupResponse);
       console.log(res);
     } catch (error) {
